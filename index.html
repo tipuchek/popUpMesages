@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PopUp Messages</title>
+    <link rel="stylesheet" href="popup.css">
+    <!--подключаем стили всплывающих сообщений-->
+</head>
+
+<body>
+    <!--Вызов сообщения при клике-->
+    <button onclick="popUp()">Messages</button>
+
+
+    <script src="popUp.js">
+        //подключаем скрипт
+    </script>
+
+    <script>
+        //инициализация
+
+        function popUp() {
+            popupmessage(message = 'Hello,World', border = '1px solid black', colorText = 'red', colorBackgorund = 'transparent', timeRemove = 4000)
+        }
+
+        //Параметры выводящих сообщений 
+
+        // message - Выводимое сообщение('String') по умолчанию 'Ваше сообщение';
+        // border - граница('String') по умолчанию '1px solid white';
+        // colorText - цвет текста('String')  по умолчанию 'white';
+        // colorBackgorund - цвет фона('String') по умолчанию 'rgba(43, 42, 40, 0.616)';
+        // timeRemove-время через которое сообщение будет удалено(number) указывается в мс;
+
+
+        //popupmessage(message, border, colorText, colorBackgorund, timeRemove)
+    </script>
+</body>
+
+</html>
